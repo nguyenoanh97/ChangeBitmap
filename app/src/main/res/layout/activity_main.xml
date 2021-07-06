@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imv_third"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_crop"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/btn_color"
+        android:background="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Color"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/btn_crop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crop"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/btn_color"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/btn_binary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Binary"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_color"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnCMYK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Binary"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_crop"
+        app:layout_constraintLeft_toRightOf="@+id/btn_binary"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/btn_blur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blur"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/btn_crop"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/btn_resize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resize"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/btn_blur"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnTachMau"
+        android:text="Tách"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imv_third"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/btnRED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btnTachMau"
+        android:layout_marginRight="8dp"
+        android:text="RED"/>
+    <Button
+        android:id="@+id/btnGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btnRED"
+        android:layout_marginRight="8dp"
+        android:text="GREEN"/>
+    <Button
+        android:id="@+id/btnBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btnGreen"
+        android:layout_marginRight="8dp"
+        android:text="BLUE"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

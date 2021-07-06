@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ChangeBitmap</string>
+    <string name="input_url_image">Input Url Image</string>
+    <string name="download_image">Download Image</string>
+</resources>
